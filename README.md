@@ -21,20 +21,24 @@ Requisitos para de ejecución de códigos
 Descripción de contenido de la memoria
 ------------------------------------------
 ```bash
-├──codigo -> Códigos de implementados para realización de la memoria
-│   ├── correlacion	-> Códigos para análisis de datos
-│   ├──  entrenamiento	-> Códigos para entrenamiento de redes neuronales
-│   ├──  generacionDatasets -> Códigos para generar dataset para cada modelo de ├── predicción
-	+ prueba/	-> Códigos para realizar pruebas de rendimiento a redes entrenadas
-	+ roc/	-> Códigos para generar curva ROC comparativa de los modelos implementados
-+ datos/	-> Conjuntos de datos utilizados para la realización de la memoria
-	+ datasetBrutos/	-> Datos extraídos directamente a partir de muestreos GPS (servicio "I09" de ida) y el Programa de Operación
-+ resultados/	-> Almacenamiento de archivos de salida de códigos implementados
-	+ errores/	-> Almacenamiento de resultados de convergencia de entrenamientos de redes neuronales
-	+ modelosFinales/ -> Modelos finales exportados con sus respectivas pruebas de rendimiento
-	+ pruebaBunching/ -> Almacenamiento de resultados de predicción de bunching
-	+ pruebas/ -> Almacenamiento de resultados de prueba de rendimiento de modelos
-	+ ROC/ -> Almacenamiento de resultados de clasificación para curva ROC
+├───codigo -> Códigos de implementados para realización de la memoria
+│   ├───correlacion -> Códigos para análisis de datos
+│   ├───entrenamiento -> Códigos para entrenamiento de redes neuronales
+│   ├───generacionDatasets -> Códigos para generar dataset para cada modelo de predicción
+│   ├───prediccionBunching -> Códigos para realizar pruebas de predicción de bunching
+│   ├───prueba -> Códigos para realizar pruebas de rendimiento a redes entrenadas
+│   └───roc -> Códigos para generar curva ROC comparativa de los modelos implementados
+├───datos -> Conjuntos de datos utilizados para la realización de la memoria
+│   └───datasetBrutos -> Datos extraídos directamente a partir de muestreos GPS y el Programa de Operación
+└───resultados -> Almacenamiento de archivos de salida de códigos implementados
+    ├───errores -> Almacenamiento de resultados de convergencia de entrenamientos de redes neuronales
+    ├───modelosFinales -> Modelos finales exportados con sus respectivas pruebas de rendimiento
+    │   ├───RND
+    │   ├───RNH
+    │   └───RNP
+    ├───pruebaBunching -> Almacenamiento de resultados de predicción de bunching
+    ├───pruebas -> Almacenamiento de resultados de prueba de rendimiento de modelos
+    └───ROC -> Almacenamiento de resultados de clasificación para curva ROC
 ```
 Instrucciones de ejecución
 ------------------------------
@@ -80,6 +84,7 @@ Instrucciones de ejecución
 	
 	3. Ejecutar el código deseado con el comando `python <Nombre del archivo>.py`
 	4. Se generará un archivo con los resultados de las predicciones del modelo elegido, en la carpeta `resultados`.  
+	
 	> Es necesario que previamente se haya realizado un proceso de entrenamiento de algún modelo de red neuronal y que se haya importado la ruta del archivo que se desea probar.
 
 + Para la ejecución de códigos de prueba:
@@ -90,6 +95,7 @@ Instrucciones de ejecución
 		- Los que no posee una terminación luego de un guion realizan pruebas de rendimiento a un modelo exportado por el proceso de entrenamiento, según la red neuronal que corresponda. 
 	3. Ejecutar el código deseado con el comando `python <Nombre del archivo>.py`.
 	4. Se generarán archivos con los resultados de las pruebas en la carpeta "pruebas" dentro de la carpeta `resultados`.
+	
 	> Es necesario que previamente se haya realizado un proceso de entrenamiento de algún modelo de red neuronal y que se haya importado la ruta del archivo que se desea probar.
 
 + Para la ejecución de códigos para generar curva ROC: 
@@ -97,4 +103,5 @@ Instrucciones de ejecución
 	1. Acceder a la carpeta `roc` con el comando `cd ./roc`.
 	2. Ejecutar el código deseado con el comando `python rocComparativa.py`.
 	3. Se generará el gráfico con la curva ROC comparativa entre los modelos implementados.
+	
 	> Es necesario que previamente se hayan generado los archivos con las muestras de clasificaciones en la predicciones de *bunching*, y se haya importado al código las rutas de los archivos correspondiente.
