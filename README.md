@@ -1,7 +1,7 @@
 ﻿LÉAME
 ======
 
-1. Requisitos para de ejecución de códigos:
+Requisitos para de ejecución de códigos:
 ---------------------------------------
 
 + Sistema operativo Linux Ubuntu (17.04 o superior) o Windows 10 de 64 bits (Build 1709 o superior)
@@ -18,27 +18,25 @@
 	+ theano (0.9.0 o superior)
 	+ lapack (3.6.1 o superior)
 
-2. Descripción de contenido de la memoria:
+Descripción de contenido de la memoria:
 ------------------------------------------
 
-Codigo/ 				-> Códigos de implementados para realización de la memoria
-	correlacion/			-> Códigos para análisis de datos
-	entrenamiento/			-> Códigos para entrenamiento de redes neuronales
-	generacionDatasets/ 	-> Códigos para generar dataset para cada modelo de predicción
-	prueba/					-> Códigos para realizar pruebas de rendimiento a redes entrenadas
-	roc/					-> Códigos para generar curva ROC comparativa de los modelos implementados
-datos/					-> Conjuntos de datos utilizados para la realización de la memoria
-	datasetBrutos/			-> Datos extraídos directamente a partir de 
-							   muestreos GPS (Universidad de Chile) y el Programa de Operación
-resultados/				-> Almacenamiento de archivos de salida de códigos implementados
-	errores/				-> Almacenamiento de resultados de convergencia de entrenamientos de 
-							   redes neuronales
-	modelosFinales/			-> Modelos finales exportados con sus respectivas pruebas de rendimiento
-	pruebaBunching/			-> Almacenamiento de resultados de predicción de bunching
-	pruebas/				-> Almacenamiento de resultados de prueba de rendimiento de modelos
-	ROC/					-> Almacenamiento de resultados de clasificación para curva ROC
++ Codigo/ -> Códigos de implementados para realización de la memoria
+	+ correlacion/	-> Códigos para análisis de datos
+	+ entrenamiento/	-> Códigos para entrenamiento de redes neuronales
+	+ generacionDatasets/ -> Códigos para generar dataset para cada modelo de predicción
+	+ prueba/	-> Códigos para realizar pruebas de rendimiento a redes entrenadas
+	+ roc/	-> Códigos para generar curva ROC comparativa de los modelos implementados
++ datos/	-> Conjuntos de datos utilizados para la realización de la memoria
+	+ datasetBrutos/	-> Datos extraídos directamente a partir de muestreos GPS (Universidad de Chile) y el Programa de Operación
++ resultados/	-> Almacenamiento de archivos de salida de códigos implementados
+	+ errores/	-> Almacenamiento de resultados de convergencia de entrenamientos de redes neuronales
+	+ modelosFinales/ -> Modelos finales exportados con sus respectivas pruebas de rendimiento
+	+ pruebaBunching/ -> Almacenamiento de resultados de predicción de bunching
+	+ pruebas/ -> Almacenamiento de resultados de prueba de rendimiento de modelos
+	+ ROC/ -> Almacenamiento de resultados de clasificación para curva ROC
 
-3. Instrucciones de ejecución:
+Instrucciones de ejecución:
 ------------------------------
 
 + Acceder a la terminal de su respectivo sistema operativo (Bash, Powershell, Command Prompt, etc.).
