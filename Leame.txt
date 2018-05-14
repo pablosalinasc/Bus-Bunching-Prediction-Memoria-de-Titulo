@@ -1,26 +1,21 @@
-﻿LÉAME
-======
+﻿1. Requisitos para de ejecución de códigos:
 
-1. Requisitos para de ejecución de códigos:
----------------------------------------
-
-+ Sistema operativo Linux Ubuntu (17.04 o superior) o Windows 10 de 64 bits (Build 1709 o superior)
-+ Python (2.7.14 o superior / 3.6.1 o superior)
-+ Lua (5.1.4 o superior)
-+ Paquetes de Python:
-	+ h5py (2.7.0 o superior)
-	+ Keras (2.0.4 o superior)
-	+ matplotlib (2.1.0 o superior)
-	+ numpy (1.13.0 o superior)
-	+ pandas (0.20.3 o superior)
-	+ scikit-learn (0.19.1 o superior)
-	+ scipy (0.19.1 o superior)
-	+ theano (0.9.0 o superior)
-	+ lapack (3.6.1 o superior)
+- Sistema operativo Linux Ubuntu (17.04 o superior) o Windows 10 de 64 bits (Build 1709 o superior)
+- Python (2.7.14 o superior / 3.6.1 o superior)
+- Lua (5.1.4 o superior)
+- Paquetes de Python:
+	- h5py (2.7.0 o superior)
+	- Keras (2.0.4 o superior)
+	- matplotlib (2.1.0 o superior)
+	- numpy (1.13.0 o superior)
+	- pandas (0.20.3 o superior)
+	- scikit-learn (0.19.1 o superior)
+	- scipy (0.19.1 o superior)
+	- theano (0.9.0 o superior)
+	- lapack (3.6.1 o superior)
 
 2. Descripción de contenido de la memoria:
-------------------------------------------
-
+	
 Codigo/ 				-> Códigos de implementados para realización de la memoria
 	correlacion/			-> Códigos para análisis de datos
 	entrenamiento/			-> Códigos para entrenamiento de redes neuronales
@@ -39,18 +34,17 @@ resultados/				-> Almacenamiento de archivos de salida de códigos implementados
 	ROC/					-> Almacenamiento de resultados de clasificación para curva ROC
 
 3. Instrucciones de ejecución:
-------------------------------
 
-+ Acceder a la terminal de su respectivo sistema operativo (Bash, Powershell, Command Prompt, etc.).
-+ Seleccionar el directorio del presente archivo con el comando cd.
-+ Acceder a la carpeta "codigo" con el comando "cd ./codigo".
-+ Para la ejecución de códigos de análisis de los datos:
+- Acceder a la terminal de su respectivo sistema operativo (Bash, Powershell, Command Prompt, etc.).
+- Seleccionar el directorio del presente archivo con el comando cd.
+- Acceder a la carpeta "codigo" con el comando "cd ./codigo".
+- Para la ejecución de códigos de análisis de los datos:
 
 	1. Acceder a la carpeta "correlacion" con el comando "cd ./correlacion".
 	2. Ejecutar el código deseado con el comando "python corRND.py" o "python corRNH.py" según corresponda.
 	3. Se generarán los gráficos de histograma, quantil-quantil y autocorrelación, correspondientes a la variable del dataset importado, además de imprimir resultados estadísticos de distribución y normalidad por la consola.
 
-+ Para la ejecución de códigos de entrenamiento de redes neuronales:
+- Para la ejecución de códigos de entrenamiento de redes neuronales:
 
 	1. Acceder a la carpeta "entrenamiento" con el comando "cd ./entrenamiento".
 	2. Ejecutar el código deseado con el comando "python entrenamientoRNP.py", "python entrenamientoRND.py" o "python entrenamientoRNH.py" según corresponda.
@@ -65,13 +59,13 @@ resultados/				-> Almacenamiento de archivos de salida de códigos implementados
 	
 	3. Se exportará en la carpeta "resultados" 1 archivo de salida por cada época de entrenamiento, con el modelo de red neuronal generado. Además en la carpeta "errores" dentro de la carpeta "resultados" se generará un archivo con el valor del error (loss function) del algoritmo de entrenamiento para cada predicción realizada.
 
-+ Para la ejecución de códigos de generación de los datasets:
+- Para la ejecución de códigos de generación de los datasets:
 
 	1. Acceder a la carpeta "generacionDatasets" con el comando "cd ./generacionDatasets".
 	2. Ejecutar el código deseado con el comando "th generacionDatasetRNH.lua", "th generacionDatasetsRNP-RND-MPH.lua" según corresponda. 
 	3. Se generarán en la carpeta "datos" los archivos con los datasets correspondientes.
 
-+ Para la ejecución de códigos de predicción de bunching:
+- Para la ejecución de códigos de predicción de bunching:
 
 	1. Acceder a la carpeta "prediccionBunching" con el comando "cd ./prediccionBunching".
 
@@ -84,7 +78,7 @@ resultados/				-> Almacenamiento de archivos de salida de códigos implementados
 	3. Se generará un archivo con los resultados de las predicciones del modelo elegido, en la carpeta "resultados".  
 	* Es necesario que previamente se haya realizado un proceso de entrenamiento de algún modelo de red neuronal y que se haya importado la ruta del archivo que se desea probar.
 
-+ Para la ejecución de códigos de prueba:
+- Para la ejecución de códigos de prueba:
 
 	1. Acceder a la carpeta "prueba" con el comando "cd ./prueba".
 	*	Existen 2 tipos de archivo:
@@ -94,7 +88,7 @@ resultados/				-> Almacenamiento de archivos de salida de códigos implementados
 	3. Se generarán archivos con los resultados de las pruebas en la carpeta "pruebas" dentro de la carpeta "resultados".
 	* Es necesario que previamente se haya realizado un proceso de entrenamiento de algún modelo de red neuronal y que se haya importado la ruta del archivo que se desea probar.
 
-+ Para la ejecución de códigos para generar curva ROC: 
+- Para la ejecución de códigos para generar curva ROC: 
 
 	1. Acceder a la carpeta "roc" con el comando "cd ./roc".
 	2. Ejecutar el código deseado con el comando "python rocComparativa.py".
