@@ -94,7 +94,7 @@ Instrucciones de ejecución
 		- Los que poseen la terminación `RandomWalk` implementan un modelo de persistencia sobre las series de tiempo de entrenamiento y prueba de cierto modelo de red neuronal recurrente (RND o RNH).
 		- Los que no posee una terminación luego de un guion realizan pruebas de rendimiento a un modelo exportado por el proceso de entrenamiento, según la red neuronal que corresponda. 
 	3. Ejecutar el código deseado con el comando `python <Nombre del archivo>.py`.
-	4. Se generarán archivos con los resultados de las pruebas en la carpeta "pruebas" dentro de la carpeta `resultados`.
+	4. Se generarán archivos con los resultados de las pruebas en la carpeta `pruebas` dentro de la carpeta `resultados`.
 	
 	> Es necesario que previamente se haya realizado un proceso de entrenamiento de algún modelo de red neuronal y que se haya importado la ruta del archivo que se desea probar.
 
