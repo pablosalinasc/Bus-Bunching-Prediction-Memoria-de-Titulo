@@ -50,7 +50,7 @@ Instrucciones de ejecución
 
 	1. Acceder a la carpeta `correlacion` con el comando `cd ./correlacion`.
 	2. Ejecutar el código deseado con el comando `python corRND.py` o `python corRNH.py` según corresponda.
-	3. Se generarán los gráficos de histograma, quantil-quantil y autocorrelación, correspondientes a la variable del dataset importado, además de imprimir resultados estadísticos de distribución y normalidad por la consola.
+	3. Se generarán los gráficos de histograma, quantil-quantil y autocorrelación, correspondientes a la variable del *dataset* importado, además de imprimir resultados estadísticos de distribución y normalidad por la consola.
 
 + Para la ejecución de códigos de entrenamiento de redes neuronales:
 
@@ -58,12 +58,12 @@ Instrucciones de ejecución
 	2. Ejecutar el código deseado con el comando `python entrenamientoRNP.py`,  `python entrenamientoRND.py` o `python entrenamientoRNH.py` según corresponda.
 
 	3. Es posible modificar los hiperparámetros de entrenamiento modificando las variables al inicio del código:
-		- `epocas`: Cantidad de épocas de entrenamiento
-		- `tasaApendizaje`: Tasa de aprendizaje utilizada por el método de entrenamiento
-		- `bloquesLSTM`: Cantidad de neuronas para las capas de bloques  (RND Y RNH)
-		- `porcentajeEntrenamiento`: Porcentaje de separación entre el dataset de entrenamiento y el dataset de prueba
-		- `sizeSeq`: Tamaño de las secuencias que ingresan a la red neuronal
-		- `neuronas`: Cantidad de neuronas para cada capa oculta del modelo (RNP)
+		- `epocas`: Cantidad de épocas de entrenamiento.
+		- `tasaApendizaje`: Tasa de aprendizaje utilizada por el método de entrenamiento.
+		- `bloquesLSTM`: Cantidad de neuronas para las capas de bloques  (RND Y RNH).
+		- `porcentajeEntrenamiento`: Porcentaje de separación entre el dataset de entrenamiento y el dataset de prueba.
+		- `sizeSeq`: Tamaño de las secuencias que ingresan a la red neuronal.
+		- `neuronas`: Cantidad de neuronas para cada capa oculta del modelo (RNP).
 	
 	4. En la carpeta `resultados`, se exportará 1 archivo de salida por cada época de entrenamiento, con el modelo de red neuronal generado. Además en la carpeta `errores` dentro de la carpeta `resultados` se generará un archivo con el valor del error (*loss function*) del algoritmo de entrenamiento para cada predicción realizada.
 
