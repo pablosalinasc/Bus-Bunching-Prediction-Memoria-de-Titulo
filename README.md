@@ -1,7 +1,7 @@
 ﻿LÉAME
 ======
 
-Requisitos para de ejecución de códigos:
+Requisitos para de ejecución de códigos
 ---------------------------------------
 
 + Sistema operativo Linux Ubuntu (17.04 o superior) o Windows 10 de 64 bits (Build 1709 o superior)
@@ -18,7 +18,7 @@ Requisitos para de ejecución de códigos:
 	+ theano (0.9.0 o superior)
 	+ lapack (3.6.1 o superior)
 
-Descripción de contenido de la memoria:
+Descripción de contenido de la memoria
 ------------------------------------------
 
 + Codigo/ -> Códigos de implementados para realización de la memoria
@@ -36,7 +36,7 @@ Descripción de contenido de la memoria:
 	+ pruebas/ -> Almacenamiento de resultados de prueba de rendimiento de modelos
 	+ ROC/ -> Almacenamiento de resultados de clasificación para curva ROC
 
-Instrucciones de ejecución:
+Instrucciones de ejecución
 ------------------------------
 
 + Acceder a la terminal de su respectivo sistema operativo (Bash, Powershell, Command Prompt, etc.).
